@@ -6,11 +6,10 @@ before_install:
 script:
     - docker run -e CI=true docker-test npm run test
 deploy:
-    edge: true
     provider: elasticbeanstalk
     region: "us-east-2"
     app: "docker-testing"
-    environment: "DockerTesting-env"
+    env: "DockerTesting-env"
     bucket_name: "elasticbeanstalk-us-east-2-615499284044"
     bucket_path: "docker-testing"
     on:
