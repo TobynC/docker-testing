@@ -11,6 +11,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <h1>learn react</h1>
+        <h2>Changed on the feature branch</h2>
       </header>
     </div>
   );
